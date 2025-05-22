@@ -1,0 +1,670 @@
+
+--- query_api._functions (Head) ---
+Empty DataFrame
+Columns: []
+Index: []
+
+--- query_api._functions (Info) ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 0 entries
+Empty DataFrame
+--------------------------------------------------
+--- Available Metric Descriptions (searching for GINS) ---
+Columns in all_metric_descs: Index(['id', 'name', 'aggregation', 'scope', 'unit'], dtype='object')
+Head of all_metric_descs:
+    id           name aggregation scope  unit
+64   0  gins:stl_cmem        prop     p  <NA>
+68   0  gins:stl_cmem         sum     p  <NA>
+65   1  gins:stl_cmem        prop     e  <NA>
+69   1  gins:stl_cmem         sum     e  <NA>
+66   2  gins:stl_cmem        prop     c  <NA>
+      id               name aggregation scope  unit
+64     0      gins:stl_cmem        prop     p  <NA>
+68     0      gins:stl_cmem         sum     p  <NA>
+65     1      gins:stl_cmem        prop     e  <NA>
+69     1      gins:stl_cmem         sum     e  <NA>
+66     2      gins:stl_cmem        prop     c  <NA>
+70     2      gins:stl_cmem         sum     c  <NA>
+71     3      gins:stl_cmem         sum     i  <NA>
+67     3      gins:stl_cmem        prop     i  <NA>
+20     4      gins:stl_othr         sum     p  <NA>
+16     4      gins:stl_othr        prop     p  <NA>
+21     5      gins:stl_othr         sum     e  <NA>
+17     5      gins:stl_othr        prop     e  <NA>
+22     6      gins:stl_othr         sum     c  <NA>
+18     6      gins:stl_othr        prop     c  <NA>
+23     7      gins:stl_othr         sum     i  <NA>
+19     7      gins:stl_othr        prop     i  <NA>
+52    16      gins:stl_mthr         sum     p  <NA>
+48    16      gins:stl_mthr        prop     p  <NA>
+53    17      gins:stl_mthr         sum     e  <NA>
+49    17      gins:stl_mthr        prop     e  <NA>
+50    18      gins:stl_mthr        prop     c  <NA>
+54    18      gins:stl_mthr         sum     c  <NA>
+55    19      gins:stl_mthr         sum     i  <NA>
+51    19      gins:stl_mthr        prop     i  <NA>
+156   36               gins         sum     p  <NA>
+152   36               gins        prop     p  <NA>
+157   37               gins         sum     e  <NA>
+153   37               gins        prop     e  <NA>
+154   38               gins        prop     c  <NA>
+158   38               gins         sum     c  <NA>
+155   39               gins        prop     i  <NA>
+159   39               gins         sum     i  <NA>
+236   40       gins:stl_any         sum     p  <NA>
+232   40       gins:stl_any        prop     p  <NA>
+237   41       gins:stl_any         sum     e  <NA>
+233   41       gins:stl_any        prop     e  <NA>
+234   42       gins:stl_any        prop     c  <NA>
+238   42       gins:stl_any         sum     c  <NA>
+235   43       gins:stl_any        prop     i  <NA>
+239   43       gins:stl_any         sum     i  <NA>
+312   48      gins:stl_idep        prop     p  <NA>
+316   48      gins:stl_idep         sum     p  <NA>
+313   49      gins:stl_idep        prop     e  <NA>
+317   49      gins:stl_idep         sum     e  <NA>
+314   50      gins:stl_idep        prop     c  <NA>
+318   50      gins:stl_idep         sum     c  <NA>
+315   51      gins:stl_idep        prop     i  <NA>
+319   51      gins:stl_idep         sum     i  <NA>
+56    64      gins:stl_ifet        prop     p  <NA>
+60    64      gins:stl_ifet         sum     p  <NA>
+61    65      gins:stl_ifet         sum     e  <NA>
+57    65      gins:stl_ifet        prop     e  <NA>
+58    66      gins:stl_ifet        prop     c  <NA>
+62    66      gins:stl_ifet         sum     c  <NA>
+59    67      gins:stl_ifet        prop     i  <NA>
+63    67      gins:stl_ifet         sum     i  <NA>
+248   84      gins:stl_gmem        prop     p  <NA>
+252   84      gins:stl_gmem         sum     p  <NA>
+249   85      gins:stl_gmem        prop     e  <NA>
+253   85      gins:stl_gmem         sum     e  <NA>
+250   86      gins:stl_gmem        prop     c  <NA>
+254   86      gins:stl_gmem         sum     c  <NA>
+251   87      gins:stl_gmem        prop     i  <NA>
+255   87      gins:stl_gmem         sum     i  <NA>
+480   92      gins:stl_pipe        prop     p  <NA>
+484   92      gins:stl_pipe         sum     p  <NA>
+485   93      gins:stl_pipe         sum     e  <NA>
+481   93      gins:stl_pipe        prop     e  <NA>
+486   94      gins:stl_pipe         sum     c  <NA>
+482   94      gins:stl_pipe        prop     c  <NA>
+487   95      gins:stl_pipe         sum     i  <NA>
+483   95      gins:stl_pipe        prop     i  <NA>
+40   108      gins:stl_nsel        prop     p  <NA>
+44   108      gins:stl_nsel         sum     p  <NA>
+45   109      gins:stl_nsel         sum     e  <NA>
+41   109      gins:stl_nsel        prop     e  <NA>
+42   110      gins:stl_nsel        prop     c  <NA>
+46   110      gins:stl_nsel         sum     c  <NA>
+47   111      gins:stl_nsel         sum     i  <NA>
+43   111      gins:stl_nsel        prop     i  <NA>
+72   112       gins:lat_cov        prop     p  <NA>
+76   112       gins:lat_cov         sum     p  <NA>
+77   113       gins:lat_cov         sum     e  <NA>
+73   113       gins:lat_cov        prop     e  <NA>
+78   114       gins:lat_cov         sum     c  <NA>
+74   114       gins:lat_cov        prop     c  <NA>
+79   115       gins:lat_cov         sum     i  <NA>
+75   115       gins:lat_cov        prop     i  <NA>
+100  116       gins:stl_slp         sum     p  <NA>
+96   116       gins:stl_slp        prop     p  <NA>
+101  117       gins:stl_slp         sum     e  <NA>
+97   117       gins:stl_slp        prop     e  <NA>
+102  118       gins:stl_slp         sum     c  <NA>
+98   118       gins:stl_slp        prop     c  <NA>
+99   119       gins:stl_slp        prop     i  <NA>
+103  119       gins:stl_slp         sum     i  <NA>
+144  132           gins:lat        prop     p  <NA>
+148  132           gins:lat         sum     p  <NA>
+145  133           gins:lat        prop     e  <NA>
+149  133           gins:lat         sum     e  <NA>
+146  134           gins:lat        prop     c  <NA>
+150  134           gins:lat         sum     c  <NA>
+147  135           gins:lat        prop     i  <NA>
+151  135           gins:lat         sum     i  <NA>
+172  136      gins:simd_tot         sum     p  <NA>
+168  136      gins:simd_tot        prop     p  <NA>
+173  137      gins:simd_tot         sum     e  <NA>
+169  137      gins:simd_tot        prop     e  <NA>
+174  138      gins:simd_tot         sum     c  <NA>
+170  138      gins:simd_tot        prop     c  <NA>
+175  139      gins:simd_tot         sum     i  <NA>
+171  139      gins:simd_tot        prop     i  <NA>
+184  144  gins:blk_simd_act        prop     p  <NA>
+188  144  gins:blk_simd_act         sum     p  <NA>
+185  145  gins:blk_simd_act        prop     e  <NA>
+189  145  gins:blk_simd_act         sum     e  <NA>
+186  146  gins:blk_simd_act        prop     c  <NA>
+190  146  gins:blk_simd_act         sum     c  <NA>
+187  147  gins:blk_simd_act        prop     i  <NA>
+191  147  gins:blk_simd_act         sum     i  <NA>
+208  156       gins:lat_ucv        prop     p  <NA>
+212  156       gins:lat_ucv         sum     p  <NA>
+209  157       gins:lat_ucv        prop     e  <NA>
+213  157       gins:lat_ucv         sum     e  <NA>
+210  158       gins:lat_ucv        prop     c  <NA>
+214  158       gins:lat_ucv         sum     c  <NA>
+211  159       gins:lat_ucv        prop     i  <NA>
+215  159       gins:lat_ucv         sum     i  <NA>
+260  168  gins:blk_exec_cnt         sum     p  <NA>
+256  168  gins:blk_exec_cnt        prop     p  <NA>
+257  169  gins:blk_exec_cnt        prop     e  <NA>
+261  169  gins:blk_exec_cnt         sum     e  <NA>
+258  170  gins:blk_exec_cnt        prop     c  <NA>
+262  170  gins:blk_exec_cnt         sum     c  <NA>
+263  171  gins:blk_exec_cnt         sum     i  <NA>
+259  171  gins:blk_exec_cnt        prop     i  <NA>
+284  176      gins:simd_act         sum     p  <NA>
+280  176      gins:simd_act        prop     p  <NA>
+281  177      gins:simd_act        prop     e  <NA>
+285  177      gins:simd_act         sum     e  <NA>
+282  178      gins:simd_act        prop     c  <NA>
+286  178      gins:simd_act         sum     c  <NA>
+283  179      gins:simd_act        prop     i  <NA>
+287  179      gins:simd_act         sum     i  <NA>
+288  180      gins:simd_wst        prop     p  <NA>
+292  180      gins:simd_wst         sum     p  <NA>
+293  181      gins:simd_wst         sum     e  <NA>
+289  181      gins:simd_wst        prop     e  <NA>
+290  182      gins:simd_wst        prop     c  <NA>
+294  182      gins:simd_wst         sum     c  <NA>
+291  183      gins:simd_wst        prop     i  <NA>
+295  183      gins:simd_wst         sum     i  <NA>
+300  184       gins:blk_lat         sum     p  <NA>
+296  184       gins:blk_lat        prop     p  <NA>
+297  185       gins:blk_lat        prop     e  <NA>
+301  185       gins:blk_lat         sum     e  <NA>
+298  186       gins:blk_lat        prop     c  <NA>
+302  186       gins:blk_lat         sum     c  <NA>
+299  187       gins:blk_lat        prop     i  <NA>
+303  187       gins:blk_lat         sum     i  <NA>
+328  196      gins:simd_sls        prop     p  <NA>
+332  196      gins:simd_sls         sum     p  <NA>
+329  197      gins:simd_sls        prop     e  <NA>
+333  197      gins:simd_sls         sum     e  <NA>
+330  198      gins:simd_sls        prop     c  <NA>
+334  198      gins:simd_sls         sum     c  <NA>
+331  199      gins:simd_sls        prop     i  <NA>
+335  199      gins:simd_sls         sum     i  <NA>
+336  200      gins:stl_none        prop     p  <NA>
+340  200      gins:stl_none         sum     p  <NA>
+337  201      gins:stl_none        prop     e  <NA>
+341  201      gins:stl_none         sum     e  <NA>
+342  202      gins:stl_none         sum     c  <NA>
+338  202      gins:stl_none        prop     c  <NA>
+343  203      gins:stl_none         sum     i  <NA>
+339  203      gins:stl_none        prop     i  <NA>
+360  208      gins:stl_sync        prop     p  <NA>
+364  208      gins:stl_sync         sum     p  <NA>
+361  209      gins:stl_sync        prop     e  <NA>
+365  209      gins:stl_sync         sum     e  <NA>
+362  210      gins:stl_sync        prop     c  <NA>
+366  210      gins:stl_sync         sum     c  <NA>
+363  211      gins:stl_sync        prop     i  <NA>
+367  211      gins:stl_sync         sum     i  <NA>
+392  224      gins:stl_tmem        prop     p  <NA>
+396  224      gins:stl_tmem         sum     p  <NA>
+393  225      gins:stl_tmem        prop     e  <NA>
+397  225      gins:stl_tmem         sum     e  <NA>
+394  226      gins:stl_tmem        prop     c  <NA>
+398  226      gins:stl_tmem         sum     c  <NA>
+395  227      gins:stl_tmem        prop     i  <NA>
+399  227      gins:stl_tmem         sum     i  <NA>
+--------------------------------------------------
+
+--- Querying CCT Nodes ---
+Columns in cct_df: Index(['type', 'parent', 'children', 'depth', 'name', 'file_path', 'line', 'module_path', 'offset'], dtype='object')
+Head of cct_df:
+         type  parent                children  depth   name  file_path  line  module_path   offset
+id                                                                                                
+1       entry    <NA>                     [4]      0      1       <NA>  <NA>         <NA>     <NA>
+4    function       1  [162, 311, 163, 15, 9]      1  19688      19464    59        19400  4208176
+162      line       4                   [315]      2   <NA>      19464   146         <NA>     <NA>
+315  function     162                   [314]      3  19608      19448     0        19400  4592384
+314      line     315                   [312]      4   <NA>      19448     0         <NA>     <NA>
+
+--- cct_df after initial query ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 64 entries, 1 to 3
+Data columns (total 9 columns):
+ #   Column       Non-Null Count  Dtype 
+---  ------       --------------  ----- 
+ 0   type         64 non-null     string
+ 1   parent       63 non-null     Int64 
+ 2   children     64 non-null     object
+ 3   depth        64 non-null     Int64 
+ 4   name         26 non-null     Int64 
+ 5   file_path    56 non-null     Int64 
+ 6   line         63 non-null     Int64 
+ 7   module_path  18 non-null     Int64 
+ 8   offset       25 non-null     Int64 
+dtypes: Int64(7), object(1), string(1)
+memory usage: 5.5+ KB
+None
+         type  parent                children  depth   name  file_path  line  module_path   offset
+id                                                                                                
+1       entry    <NA>                     [4]      0      1       <NA>  <NA>         <NA>     <NA>
+4    function       1  [162, 311, 163, 15, 9]      1  19688      19464    59        19400  4208176
+162      line       4                   [315]      2   <NA>      19464   146         <NA>     <NA>
+315  function     162                   [314]      3  19608      19448     0        19400  4592384
+314      line     315                   [312]      4   <NA>      19448     0         <NA>     <NA>
+
+--- cct_df after adding cct_paths ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 64 entries, 1 to 3
+Data columns (total 10 columns):
+ #   Column       Non-Null Count  Dtype 
+---  ------       --------------  ----- 
+ 0   type         64 non-null     string
+ 1   parent       63 non-null     Int64 
+ 2   children     64 non-null     object
+ 3   depth        64 non-null     Int64 
+ 4   name         26 non-null     Int64 
+ 5   file_path    56 non-null     Int64 
+ 6   line         63 non-null     Int64 
+ 7   module_path  18 non-null     Int64 
+ 8   offset       25 non-null     Int64 
+ 9   cct_path     64 non-null     object
+dtypes: Int64(7), object(2), string(1)
+memory usage: 8.1+ KB
+None
+    id                                         cct_path   name  file_path  line
+0    1                                                1      1       <NA>  <NA>
+1    4                                        1 » 19688  19688      19464    59
+2  162                            1 » 19688 » 19464:146   <NA>      19464   146
+3  315                    1 » 19688 » 19464:146 » 19608  19608      19448     0
+4  314  1 » 19688 » 19464:146 » 19608 » Node_314 (line)   <NA>      19448     0
+
+--- Querying Profile Slices for all metrics (will filter for ['gins', 'gins:stl_any', 'gins:stl_ifet', 'gins:stl_idep', 'gins:stl_gmem', 'gins:stl_cmem', 'gins:stl_pipe', 'gins:stl_mthr'] later) ---
+Available Profile Descriptions:
+         node  rank  thread  core  gpustream  gpucontext  gpudevice  ctx_samples  metric_samples  trace_samples
+id                                                                                                             
+0        <NA>  <NA>    <NA>  <NA>       <NA>        <NA>       <NA>         <NA>            <NA>           <NA>
+1   713047168  <NA>       0  <NA>       <NA>        <NA>       <NA>          309            5729           <NA>
+TASKS COUNT: 1
+Query for profile_slices returned 2284 entries.
+                                 value
+profile_id cct_id metric_id           
+0          1      3          1.142e+07
+                  7          4.263e+09
+                  11         1.669e+00
+                  15         6.400e+03
+                  19         5.390e+10
+--------------------------------------------------
+
+--- profile_slices_df after query_profile_slices (index includes profile_id, cct_id, metric_id) ---
+<class 'pandas.core.frame.DataFrame'>
+MultiIndex: 2284 entries, (0, 1, 3) to (1, 315, 99)
+Data columns (total 1 columns):
+ #   Column  Non-Null Count  Dtype  
+---  ------  --------------  -----  
+ 0   value   2284 non-null   float64
+dtypes: float64(1)
+memory usage: 42.4 KB
+None
+                                 value
+profile_id cct_id metric_id           
+0          1      3          1.142e+07
+                  7          4.263e+09
+                  11         1.669e+00
+                  15         6.400e+03
+                  19         5.390e+10
+
+--- profile_slices_df after reset_index() ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 2284 entries, 0 to 2283
+Data columns (total 4 columns):
+ #   Column      Non-Null Count  Dtype  
+---  ------      --------------  -----  
+ 0   profile_id  2284 non-null   int64  
+ 1   cct_id      2284 non-null   int64  
+ 2   metric_id   2284 non-null   int64  
+ 3   value       2284 non-null   float64
+dtypes: float64(1), int64(3)
+memory usage: 71.5 KB
+None
+   profile_id  cct_id  metric_id      value
+0           0       1          3  1.142e+07
+1           0       1          7  4.263e+09
+2           0       1         11  1.669e+00
+3           0       1         15  6.400e+03
+4           0       1         19  5.390e+10
+After filtering for Sum (I) variants, 428 entries remaining.
+    profile_id  cct_id  metric_id      value metric_base_name metric_scope metric_aggregation
+9            0       1         39  1.649e+11             gins            i                sum
+10           0       1         43  8.817e+10     gins:stl_any            i                sum
+12           0       1         51  3.914e+09    gins:stl_idep            i                sum
+16           0       1         67  1.523e+08    gins:stl_ifet            i                sum
+21           0       1         87  2.554e+10    gins:stl_gmem            i                sum
+--------------------------------------------------
+
+--- filtered_slices after initial filter (Sum I) ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 428 entries, 9 to 2257
+Data columns (total 7 columns):
+ #   Column              Non-Null Count  Dtype  
+---  ------              --------------  -----  
+ 0   profile_id          428 non-null    int64  
+ 1   cct_id              428 non-null    int64  
+ 2   metric_id           428 non-null    int64  
+ 3   value               428 non-null    float64
+ 4   metric_base_name    428 non-null    object 
+ 5   metric_scope        428 non-null    object 
+ 6   metric_aggregation  428 non-null    object 
+dtypes: float64(1), int64(3), object(3)
+memory usage: 26.8+ KB
+None
+    profile_id  cct_id  metric_id      value metric_base_name metric_scope metric_aggregation
+9            0       1         39  1.649e+11             gins            i                sum
+10           0       1         43  8.817e+10     gins:stl_any            i                sum
+12           0       1         51  3.914e+09    gins:stl_idep            i                sum
+16           0       1         67  1.523e+08    gins:stl_ifet            i                sum
+21           0       1         87  2.554e+10    gins:stl_gmem            i                sum
+
+--- filtered_slices after adding metric_display_name ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 428 entries, 9 to 2257
+Data columns (total 8 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   profile_id           428 non-null    int64  
+ 1   cct_id               428 non-null    int64  
+ 2   metric_id            428 non-null    int64  
+ 3   value                428 non-null    float64
+ 4   metric_base_name     428 non-null    object 
+ 5   metric_scope         428 non-null    object 
+ 6   metric_aggregation   428 non-null    object 
+ 7   metric_display_name  428 non-null    object 
+dtypes: float64(1), int64(3), object(4)
+memory usage: 30.1+ KB
+None
+    cct_id  metric_id metric_base_name     metric_display_name      value
+9        1         39             gins           GINS: Sum (I)  1.649e+11
+10       1         43     gins:stl_any   GINS:STL_ANY: Sum (I)  8.817e+10
+12       1         51    gins:stl_idep  GINS:STL_IDEP: Sum (I)  3.914e+09
+16       1         67    gins:stl_ifet  GINS:STL_IFET: Sum (I)  1.523e+08
+21       1         87    gins:stl_gmem  GINS:STL_GMEM: Sum (I)  2.554e+10
+After filtering for specific TARGET_METRICS_DISPLAY, 428 entries remaining.
+    cct_id     metric_display_name      value
+9        1           GINS: Sum (I)  1.649e+11
+10       1   GINS:STL_ANY: Sum (I)  8.817e+10
+12       1  GINS:STL_IDEP: Sum (I)  3.914e+09
+16       1  GINS:STL_IFET: Sum (I)  1.523e+08
+21       1  GINS:STL_GMEM: Sum (I)  2.554e+10
+--------------------------------------------------
+
+--- filtered_slices after TARGET_METRICS_DISPLAY filter ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 428 entries, 9 to 2257
+Data columns (total 8 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   profile_id           428 non-null    int64  
+ 1   cct_id               428 non-null    int64  
+ 2   metric_id            428 non-null    int64  
+ 3   value                428 non-null    float64
+ 4   metric_base_name     428 non-null    object 
+ 5   metric_scope         428 non-null    object 
+ 6   metric_aggregation   428 non-null    object 
+ 7   metric_display_name  428 non-null    object 
+dtypes: float64(1), int64(3), object(4)
+memory usage: 30.1+ KB
+None
+    profile_id  cct_id  metric_id      value metric_base_name metric_scope metric_aggregation     metric_display_name
+9            0       1         39  1.649e+11             gins            i                sum           GINS: Sum (I)
+10           0       1         43  8.817e+10     gins:stl_any            i                sum   GINS:STL_ANY: Sum (I)
+12           0       1         51  3.914e+09    gins:stl_idep            i                sum  GINS:STL_IDEP: Sum (I)
+16           0       1         67  1.523e+08    gins:stl_ifet            i                sum  GINS:STL_IFET: Sum (I)
+21           0       1         87  2.554e+10    gins:stl_gmem            i                sum  GINS:STL_GMEM: Sum (I)
+
+--- aggregated_values ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 214 entries, 0 to 213
+Data columns (total 3 columns):
+ #   Column               Non-Null Count  Dtype  
+---  ------               --------------  -----  
+ 0   cct_id               214 non-null    int64  
+ 1   metric_display_name  214 non-null    object 
+ 2   value                214 non-null    float64
+dtypes: float64(1), int64(1), object(1)
+memory usage: 5.1+ KB
+None
+   cct_id     metric_display_name      value
+0       1           GINS: Sum (I)  3.297e+11
+1       1   GINS:STL_ANY: Sum (I)  1.763e+11
+2       1  GINS:STL_GMEM: Sum (I)  5.107e+10
+3       1  GINS:STL_IDEP: Sum (I)  7.827e+09
+4       1  GINS:STL_IFET: Sum (I)  3.045e+08
+
+--- final_df after merge with cct_df_for_merge ---
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 46 entries, 0 to 45
+Data columns (total 12 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   id                      46 non-null     Int64  
+ 1   cct_path                46 non-null     object 
+ 2   name                    16 non-null     Int64  
+ 3   file_path               43 non-null     Int64  
+ 4   line                    45 non-null     Int64  
+ 5   type                    46 non-null     string 
+ 6   cct_id                  46 non-null     int64  
+ 7   GINS: Sum (I)           46 non-null     float64
+ 8   GINS:STL_ANY: Sum (I)   46 non-null     float64
+ 9   GINS:STL_GMEM: Sum (I)  32 non-null     float64
+ 10  GINS:STL_IDEP: Sum (I)  46 non-null     float64
+ 11  GINS:STL_IFET: Sum (I)  44 non-null     float64
+dtypes: Int64(4), float64(5), int64(1), object(1), string(1)
+memory usage: 4.6+ KB
+None
+    id                                           cct_path   name  file_path  line      type  cct_id  GINS: Sum (I)  GINS:STL_ANY: Sum (I)  GINS:STL_GMEM: Sum (I)  GINS:STL_IDEP: Sum (I)  GINS:STL_IFET: Sum (I)
+0    1                                                  1      1       <NA>  <NA>     entry       1      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08
+1    4                                          1 » 19688  19688      19464    59  function       4      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08
+2  311                      1 » 19688 » loop at 19464:120   <NA>      19464   120      loop     311      1.644e+11              8.765e+10               2.494e+10               3.910e+09               1.520e+08
+3  310          1 » 19688 » loop at 19464:120 » 19464:121   <NA>      19464   121      line     310      1.644e+11              8.765e+10               2.494e+10               3.910e+09               1.520e+08
+4  308  1 » 19688 » loop at 19464:120 » 19464:121 » 19728  19728      19464    20  function     308      1.644e+11              8.765e+10               2.494e+10               3.910e+09               1.520e+08
+
+--- Combined PC Sampling Data View (Absolute Values) ---
+
+--- final_df_sorted before dropna and percentage calc ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 46 entries, 0 to 44
+Data columns (total 15 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   id                      46 non-null     Int64  
+ 1   cct_path                46 non-null     object 
+ 2   name                    16 non-null     Int64  
+ 3   file_path               43 non-null     Int64  
+ 4   line                    45 non-null     Int64  
+ 5   type                    46 non-null     string 
+ 6   cct_id                  46 non-null     int64  
+ 7   GINS: Sum (I)           46 non-null     float64
+ 8   GINS:STL_ANY: Sum (I)   46 non-null     float64
+ 9   GINS:STL_GMEM: Sum (I)  32 non-null     float64
+ 10  GINS:STL_IDEP: Sum (I)  46 non-null     float64
+ 11  GINS:STL_IFET: Sum (I)  44 non-null     float64
+ 12  GINS:STL_CMEM: Sum (I)  0 non-null      object 
+ 13  GINS:STL_PIPE: Sum (I)  0 non-null      object 
+ 14  GINS:STL_MTHR: Sum (I)  0 non-null      object 
+dtypes: Int64(4), float64(5), int64(1), object(4), string(1)
+memory usage: 5.9+ KB
+None
+     id                                           cct_path   name  file_path  line      type  cct_id  GINS: Sum (I)  GINS:STL_ANY: Sum (I)  GINS:STL_GMEM: Sum (I)  GINS:STL_IDEP: Sum (I)  GINS:STL_IFET: Sum (I) GINS:STL_CMEM: Sum (I) GINS:STL_PIPE: Sum (I) GINS:STL_MTHR: Sum (I)
+0     1                                                  1      1       <NA>  <NA>     entry       1      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08                   <NA>                   <NA>                   <NA>
+1     4                                          1 » 19688  19688      19464    59  function       4      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08                   <NA>                   <NA>                   <NA>
+34  151  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19568      19448     0  function     151      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+32  154  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19808      19496   216  function     154      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+31  155  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19480    13      line     155      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+                                             cct_path   name  file_path  line      type  GINS: Sum (I)  GINS:STL_ANY: Sum (I)  GINS:STL_IFET: Sum (I)  GINS:STL_IDEP: Sum (I)  GINS:STL_GMEM: Sum (I) GINS:STL_CMEM: Sum (I) GINS:STL_PIPE: Sum (I) GINS:STL_MTHR: Sum (I)
+0                                                   1      1       <NA>  <NA>     entry      3.297e+11              1.763e+11               3.045e+08               7.827e+09               5.107e+10                   <NA>                   <NA>                   <NA>
+1                                           1 » 19688  19688      19464    59  function      3.297e+11              1.763e+11               3.045e+08               7.827e+09               5.107e+10                   <NA>                   <NA>                   <NA>
+34  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19568      19448     0  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+32  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19808      19496   216  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+31  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19480    13      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+30  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19768      19480    13  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+29  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     6      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+28  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19648      19464     6  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+27  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    26      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+26  1 » 19688 » loop at 19464:108 » 19464:109 » 19728  19728      19464    20  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+25          1 » 19688 » loop at 19464:108 » 19464:109   <NA>      19464   109      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+24                      1 » 19688 » loop at 19464:108   <NA>      19464   108      loop      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+35  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19448     0      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+36  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19968       <NA>     0  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+37  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19528      19464     6  function      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+33  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19496   216      line      1.654e+11              8.869e+10               1.525e+08               3.917e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+9   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19480    13      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+4   1 » 19688 » loop at 19464:120 » 19464:121 » 19728  19728      19464    20  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+14  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19968       <NA>     0  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+13  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19448     0      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+12  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19568      19448     0  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+2                       1 » 19688 » loop at 19464:120   <NA>      19464   120      loop      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+3           1 » 19688 » loop at 19464:120 » 19464:121   <NA>      19464   121      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+11  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19496   216      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+10  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19808      19496   216  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+15  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19528      19464     6  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+8   1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19768      19480    13  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+7   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     6      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+6   1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19648      19464     6  function      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+5   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    26      line      1.644e+11              8.765e+10               1.520e+08               3.910e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+43  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    13      line      1.641e+11              8.842e+10               1.445e+08               3.698e+09               2.613e+10                   <NA>                   <NA>                   <NA>
+22  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    13      line      1.631e+11              8.738e+10               1.443e+08               3.692e+09               2.494e+10                   <NA>                   <NA>                   <NA>
+42  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    12      line      1.139e+09              2.035e+08               2.933e+06               1.955e+08                     NaN                   <NA>                   <NA>                   <NA>
+21  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    12      line      1.138e+09              2.039e+08               2.777e+06               1.957e+08                     NaN                   <NA>                   <NA>                   <NA>
+45  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    17      line      4.022e+07              2.427e+07               2.302e+06               1.409e+06                     NaN                   <NA>                   <NA>                   <NA>
+17  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    17      line      3.937e+07              2.317e+07               2.204e+06               1.090e+06                     NaN                   <NA>                   <NA>                   <NA>
+18  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     7      line      2.523e+07              1.119e+07               7.373e+04               6.283e+06                     NaN                   <NA>                   <NA>                   <NA>
+39  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     7      line      2.503e+07              1.103e+07               8.192e+04               6.463e+06                     NaN                   <NA>                   <NA>                   <NA>
+19  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     8      line      2.399e+07              1.205e+07                     NaN               9.757e+06                     NaN                   <NA>                   <NA>                   <NA>
+40  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     8      line      2.368e+07              1.262e+07                     NaN               1.008e+07                     NaN                   <NA>                   <NA>                   <NA>
+20  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    11      line      2.046e+07              1.020e+07               1.147e+05               3.621e+06                     NaN                   <NA>                   <NA>                   <NA>
+41  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    11      line      1.995e+07              9.888e+06               9.830e+04               3.834e+06                     NaN                   <NA>                   <NA>                   <NA>
+16  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     6      line      1.425e+07              8.331e+06               1.466e+06               3.277e+04                     NaN                   <NA>                   <NA>                   <NA>
+38  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    15      line      1.285e+07              4.858e+06               1.294e+06               2.212e+06                     NaN                   <NA>                   <NA>                   <NA>
+23  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    15      line      1.209e+07              4.702e+06               1.090e+06               2.138e+06                     NaN                   <NA>                   <NA>                   <NA>
+44  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     6      line      1.095e+07              6.562e+06               1.311e+06               3.277e+04                     NaN                   <NA>                   <NA>                   <NA>
+--------------------------------------------------
+
+--- final_df_sorted after dropna, before percentage calc ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 46 entries, 0 to 44
+Data columns (total 15 columns):
+ #   Column                  Non-Null Count  Dtype  
+---  ------                  --------------  -----  
+ 0   id                      46 non-null     Int64  
+ 1   cct_path                46 non-null     object 
+ 2   name                    16 non-null     Int64  
+ 3   file_path               43 non-null     Int64  
+ 4   line                    45 non-null     Int64  
+ 5   type                    46 non-null     string 
+ 6   cct_id                  46 non-null     int64  
+ 7   GINS: Sum (I)           46 non-null     float64
+ 8   GINS:STL_ANY: Sum (I)   46 non-null     float64
+ 9   GINS:STL_GMEM: Sum (I)  32 non-null     float64
+ 10  GINS:STL_IDEP: Sum (I)  46 non-null     float64
+ 11  GINS:STL_IFET: Sum (I)  44 non-null     float64
+ 12  GINS:STL_CMEM: Sum (I)  0 non-null      object 
+ 13  GINS:STL_PIPE: Sum (I)  0 non-null      object 
+ 14  GINS:STL_MTHR: Sum (I)  0 non-null      object 
+dtypes: Int64(4), float64(5), int64(1), object(4), string(1)
+memory usage: 5.9+ KB
+None
+     id                                           cct_path   name  file_path  line      type  cct_id  GINS: Sum (I)  GINS:STL_ANY: Sum (I)  GINS:STL_GMEM: Sum (I)  GINS:STL_IDEP: Sum (I)  GINS:STL_IFET: Sum (I) GINS:STL_CMEM: Sum (I) GINS:STL_PIPE: Sum (I) GINS:STL_MTHR: Sum (I)
+0     1                                                  1      1       <NA>  <NA>     entry       1      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08                   <NA>                   <NA>                   <NA>
+1     4                                          1 » 19688  19688      19464    59  function       4      3.297e+11              1.763e+11               5.107e+10               7.827e+09               3.045e+08                   <NA>                   <NA>                   <NA>
+34  151  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19568      19448     0  function     151      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+32  154  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19808      19496   216  function     154      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+31  155  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19480    13      line     155      1.654e+11              8.869e+10               2.613e+10               3.917e+09               1.525e+08                   <NA>                   <NA>                   <NA>
+
+--- Combined PC Sampling Data View (With Percentages) ---
+
+--- final_df_sorted after percentage calculation ---
+<class 'pandas.core.frame.DataFrame'>
+Index: 46 entries, 0 to 44
+Data columns (total 23 columns):
+ #   Column                    Non-Null Count  Dtype  
+---  ------                    --------------  -----  
+ 0   id                        46 non-null     Int64  
+ 1   cct_path                  46 non-null     object 
+ 2   name                      16 non-null     Int64  
+ 3   file_path                 43 non-null     Int64  
+ 4   line                      45 non-null     Int64  
+ 5   type                      46 non-null     string 
+ 6   cct_id                    46 non-null     int64  
+ 7   GINS: Sum (I)             46 non-null     float64
+ 8   GINS:STL_ANY: Sum (I)     46 non-null     float64
+ 9   GINS:STL_GMEM: Sum (I)    32 non-null     float64
+ 10  GINS:STL_IDEP: Sum (I)    46 non-null     float64
+ 11  GINS:STL_IFET: Sum (I)    44 non-null     float64
+ 12  GINS:STL_CMEM: Sum (I)    0 non-null      object 
+ 13  GINS:STL_PIPE: Sum (I)    0 non-null      object 
+ 14  GINS:STL_MTHR: Sum (I)    0 non-null      object 
+ 15  GINS: Sum (I) %           46 non-null     float64
+ 16  GINS:STL_ANY: Sum (I) %   46 non-null     float64
+ 17  GINS:STL_IFET: Sum (I) %  44 non-null     float64
+ 18  GINS:STL_IDEP: Sum (I) %  46 non-null     float64
+ 19  GINS:STL_GMEM: Sum (I) %  32 non-null     float64
+ 20  GINS:STL_CMEM: Sum (I) %  46 non-null     float64
+ 21  GINS:STL_PIPE: Sum (I) %  46 non-null     float64
+ 22  GINS:STL_MTHR: Sum (I) %  46 non-null     float64
+dtypes: Int64(4), float64(13), int64(1), object(4), string(1)
+memory usage: 8.8+ KB
+None
+     id                                           cct_path   name  file_path  line      type  cct_id  GINS: Sum (I)  GINS:STL_ANY: Sum (I)  GINS:STL_GMEM: Sum (I)  ...  GINS:STL_PIPE: Sum (I)  GINS:STL_MTHR: Sum (I) GINS: Sum (I) % GINS:STL_ANY: Sum (I) % GINS:STL_IFET: Sum (I) %  GINS:STL_IDEP: Sum (I) %  GINS:STL_GMEM: Sum (I) %  GINS:STL_CMEM: Sum (I) %  GINS:STL_PIPE: Sum (I) %  GINS:STL_MTHR: Sum (I) %
+0     1                                                  1      1       <NA>  <NA>     entry       1      3.297e+11              1.763e+11               5.107e+10  ...                    <NA>                    <NA>         100.000                 100.000                  100.000                   100.000                   100.000                       0.0                       0.0                       0.0
+1     4                                          1 » 19688  19688      19464    59  function       4      3.297e+11              1.763e+11               5.107e+10  ...                    <NA>                    <NA>         100.000                 100.000                  100.000                   100.000                   100.000                       0.0                       0.0                       0.0
+34  151  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19568      19448     0  function     151      1.654e+11              8.869e+10               2.613e+10  ...                    <NA>                    <NA>          50.152                  50.295                   50.089                    50.044                    51.159                       0.0                       0.0                       0.0
+32  154  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19808      19496   216  function     154      1.654e+11              8.869e+10               2.613e+10  ...                    <NA>                    <NA>          50.152                  50.295                   50.089                    50.044                    51.159                       0.0                       0.0                       0.0
+31  155  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19480    13      line     155      1.654e+11              8.869e+10               2.613e+10  ...                    <NA>                    <NA>          50.152                  50.295                   50.089                    50.044                    51.159                       0.0                       0.0                       0.0
+
+[5 rows x 23 columns]
+                                             cct_path   name  file_path  line      type  GINS: Sum (I)  GINS: Sum (I) %  GINS:STL_ANY: Sum (I)  GINS:STL_ANY: Sum (I) %  GINS:STL_IFET: Sum (I)  ...  GINS:STL_IDEP: Sum (I)  GINS:STL_IDEP: Sum (I) %  GINS:STL_GMEM: Sum (I)  GINS:STL_GMEM: Sum (I) %  GINS:STL_CMEM: Sum (I) GINS:STL_CMEM: Sum (I) %  GINS:STL_PIPE: Sum (I) GINS:STL_PIPE: Sum (I) %  GINS:STL_MTHR: Sum (I) GINS:STL_MTHR: Sum (I) %
+0                                                   1      1       <NA>  <NA>     entry      3.297e+11          100.000              1.763e+11                  100.000               3.045e+08  ...               7.827e+09                 1.000e+02               5.107e+10                   100.000                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+1                                           1 » 19688  19688      19464    59  function      3.297e+11          100.000              1.763e+11                  100.000               3.045e+08  ...               7.827e+09                 1.000e+02               5.107e+10                   100.000                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+34  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19568      19448     0  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+32  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19808      19496   216  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+31  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19480    13      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+30  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19768      19480    13  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+29  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     6      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+28  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19648      19464     6  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+27  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    26      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+26  1 » 19688 » loop at 19464:108 » 19464:109 » 19728  19728      19464    20  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+25          1 » 19688 » loop at 19464:108 » 19464:109   <NA>      19464   109      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+24                      1 » 19688 » loop at 19464:108   <NA>      19464   108      loop      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+35  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19448     0      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+36  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19968       <NA>     0  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+37  1 » 19688 » loop at 19464:108 » 19464:109 » 19...  19528      19464     6  function      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+33  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19496   216      line      1.654e+11           50.152              8.869e+10                   50.295               1.525e+08  ...               3.917e+09                 5.004e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+9   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19480    13      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+4   1 » 19688 » loop at 19464:120 » 19464:121 » 19728  19728      19464    20  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+14  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19968       <NA>     0  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+13  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19448     0      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+12  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19568      19448     0  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+2                       1 » 19688 » loop at 19464:120   <NA>      19464   120      loop      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+3           1 » 19688 » loop at 19464:120 » 19464:121   <NA>      19464   121      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+11  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19496   216      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+10  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19808      19496   216  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+15  1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19528      19464     6  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+8   1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19768      19480    13  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+7   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     6      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+6   1 » 19688 » loop at 19464:120 » 19464:121 » 19...  19648      19464     6  function      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+5   1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    26      line      1.644e+11           49.848              8.765e+10                   49.705               1.520e+08  ...               3.910e+09                 4.996e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+43  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    13      line      1.641e+11           49.766              8.842e+10                   50.140               1.445e+08  ...               3.698e+09                 4.724e+01               2.613e+10                    51.159                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+22  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    13      line      1.631e+11           49.462              8.738e+10                   49.550               1.443e+08  ...               3.692e+09                 4.716e+01               2.494e+10                    48.841                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+42  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    12      line      1.139e+09            0.345              2.035e+08                    0.115               2.933e+06  ...               1.955e+08                 2.497e+00                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+21  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    12      line      1.138e+09            0.345              2.039e+08                    0.116               2.777e+06  ...               1.957e+08                 2.501e+00                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+45  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    17      line      4.022e+07            0.012              2.427e+07                    0.014               2.302e+06  ...               1.409e+06                 1.800e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+17  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    17      line      3.937e+07            0.012              2.317e+07                    0.013               2.204e+06  ...               1.090e+06                 1.392e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+18  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     7      line      2.523e+07            0.008              1.119e+07                    0.006               7.373e+04  ...               6.283e+06                 8.027e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+39  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     7      line      2.503e+07            0.008              1.103e+07                    0.006               8.192e+04  ...               6.463e+06                 8.258e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+19  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     8      line      2.399e+07            0.007              1.205e+07                    0.007                     NaN  ...               9.757e+06                 1.247e-01                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+40  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     8      line      2.368e+07            0.007              1.262e+07                    0.007                     NaN  ...               1.008e+07                 1.288e-01                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+20  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    11      line      2.046e+07            0.006              1.020e+07                    0.006               1.147e+05  ...               3.621e+06                 4.626e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+41  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    11      line      1.995e+07            0.006              9.888e+06                    0.006               9.830e+04  ...               3.834e+06                 4.898e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+16  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464     6      line      1.425e+07            0.004              8.331e+06                    0.005               1.466e+06  ...               3.277e+04                 4.186e-04                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+38  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464    15      line      1.285e+07            0.004              4.858e+06                    0.003               1.294e+06  ...               2.212e+06                 2.826e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+23  1 » 19688 » loop at 19464:120 » 19464:121 » 19...   <NA>      19464    15      line      1.209e+07            0.004              4.702e+06                    0.003               1.090e+06  ...               2.138e+06                 2.732e-02                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+44  1 » 19688 » loop at 19464:108 » 19464:109 » 19...   <NA>      19464     6      line      1.095e+07            0.003              6.562e+06                    0.004               1.311e+06  ...               3.277e+04                 4.186e-04                     NaN                       NaN                    <NA>                      0.0                    <NA>                      0.0                    <NA>                      0.0
+
+[46 rows x 21 columns]

@@ -1,0 +1,9 @@
+1 Register blocking + multiple accumulators
+Why? The single running sum in your loop forms a strict read-after-write chain, so every FMA must wait for the previous one to finish.
+Fix: keep 2-8 independent partial sums in registers and combine them once per tile. This shortens each dependency chain by that factor and exposes instruction-level parallelism (ILP) to the scheduler.
+
+2 Loop unrolling
+Pair the extra accumulators with an explicit #pragma unroll (or manual unroll) so the compiler issues several FMAs back-to-back without branch overhead.
+
+3 Tiling into shared memory
+Bringing a block-sized “tile” of A and B into __shared__ memory lets every thread reuse the operands held in L1/L0, cuts global-memory traffic, and ensures coalesced loads. You also hide memory latency that could otherwise overlap with the arithmetic ILP you just exposed.
